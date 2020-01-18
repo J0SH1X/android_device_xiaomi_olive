@@ -27,6 +27,9 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
+#Audio
+USE_XML_AUDIO_POLICY_CONF := 1
+
 #Binder
 TARGET_USES_64_BIT_BINDER := true
 
@@ -97,7 +100,7 @@ BOARD_PLAT_PUBLIC_SEPOLICY_DIR += device/qcom/sepolicy/public
 BOARD_USES_QCOM_HARDWARE := true
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/etc/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/xiaomi/olive/recovery/root/etc/recovery.fstab
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # Verity
