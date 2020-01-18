@@ -1,0 +1,6 @@
+[
+  {
+    "repository": "android_kernel_xiaomi_olive",
+    "target_path": "kernel/xiaomi/olive"
+  }
+]
