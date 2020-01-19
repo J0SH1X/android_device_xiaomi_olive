@@ -95,7 +95,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 # SELinux
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += device/qcom/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += device/qcom/sepolicy/public
-BOARD_SEPOLICY_DIRS += devce/xiaomi/olive/sepolicy/temp
+BOARD_SEPOLICY_DIRS += device/xiaomi/olive/sepolicy/temp
 
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true
