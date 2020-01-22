@@ -30,8 +30,8 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 # Ambient display
-#PRODUCT_PACKAGES += \
-#    XiaomiDoze
+PRODUCT_PACKAGES += \
+    XiaomiDoze
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -42,10 +42,6 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.manager@1.0
 
-
-# loggy
-PRODUCT_PACKAGES += \
-    loggy.sh
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
