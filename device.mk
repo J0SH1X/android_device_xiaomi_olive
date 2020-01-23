@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+#-include device/xiaomi/olive/system_prop.mk
+
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
@@ -22,8 +24,18 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 TARGET_SCREEN_HEIGHT := 1440
 TARGET_SCREEN_WIDTH := 720
 
-# GMS
+
+# FM
+PRODUCT_PACKAGES += \
+    FMRadio \
+    libfmjni
+
+#GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.xiaomi_olive
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
