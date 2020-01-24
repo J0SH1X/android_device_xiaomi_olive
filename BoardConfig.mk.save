@@ -82,9 +82,6 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/xiaomi/olive
 TARGET_KERNEL_CONFIG := olive-perf_defconfig
 #TARGET_KERNEL_CLANG_COMPILE := true
-#TARGET_KERNEL_ADDITIONAL_FLAGS := \
-#    DTC=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc \
-
 
 # OTA
 TARGET_OTA_ASSERT_DEVICE := olive
@@ -106,7 +103,8 @@ BOARD_PREBUILT_VENDORIMAGE := device/xiaomi/olive/vendor.img
 TARGET_COPY_OUT_VENDOR := vendor
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 #BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
-#BOARD_USES_VENDORIMAGE := true
+BOARD_USES_VENDORIMAGE
+
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/dev/input/event3"
 
