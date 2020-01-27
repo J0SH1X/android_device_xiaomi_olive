@@ -78,7 +78,7 @@ PRODUCT_PACKAGES += \
 
 #Securelock
 PRODUCT_COPY_FILES += \
-    device/xiaomi/olive/securelock.xml:system/etc/permissions/securelock.xml \
+    device/xiaomi/olive/securelock.xml:system/etc/permissions/securelock.xml
 
 # Telephony
 PRODUCT_PACKAGES += \
