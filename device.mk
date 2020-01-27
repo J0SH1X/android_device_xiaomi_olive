@@ -24,6 +24,9 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 TARGET_SCREEN_HEIGHT := 1440
 TARGET_SCREEN_WIDTH := 720
 
+#CNE
+PRODUCT_PACKAGES += \
+    libcnefeatureconfig
 
 # FM
 PRODUCT_PACKAGES += \
@@ -32,6 +35,10 @@ PRODUCT_PACKAGES += \
 
 #GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# IMS
+PRODUCT_PACKAGES += \
+    ims-ext-common
 
 # Light
 PRODUCT_PACKAGES += \
@@ -69,9 +76,24 @@ PRODUCT_PACKAGES += \
     rcs_service_api \
     rcs_service_api.xml
 
+#Securelock
+PRODUCT_COPY_FILES += \
+    device/xiaomi/olive/securelock.xml:system/etc/permissions/securelock.xml \
+
+# Telephony
+PRODUCT_PACKAGES += \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
 # VNDK
 PRODUCT_PACKAGES += \
     vndk_package
+
+# WiFi Display
+#PRODUCT_BOOT_JARS += \
+#    WfdCommon
 
 # System properties
 -include $(LOCAL_PATH)/system_prop.mk
