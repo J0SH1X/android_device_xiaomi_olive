@@ -38,6 +38,12 @@ TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := MSM8937
 TARGET_BOARD_PLATFORM := msm8937
 
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/xiaomi/olive/bluetooth
+BLUETOOTH_HCI_USE_MCT := true
+QCOM_BT_USE_SMD_TTY := true
+
+
 
 #Charger
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
@@ -139,4 +145,4 @@ BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_EXTRA_VNDK_VERSIONS := 28
 # Inherit proprietary version
-#-include vendor/xiaomi/olive/BoardConfigVendor.mk
+-include vendor/xiaomi/olive/BoardConfigVendor.mk
