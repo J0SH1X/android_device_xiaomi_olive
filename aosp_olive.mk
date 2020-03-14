@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit from the common EvolutionX  configs.
+# Inherit from the common PixelExperience configs.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit from olive device
